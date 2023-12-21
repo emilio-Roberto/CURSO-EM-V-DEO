@@ -21,7 +21,7 @@ sleep(2)
 #Calculo
 imc = (pe / (al * al))
 #Apresentação
-print(f'Seu IMC é {imc:.2f}')
+print(f'Seu IMC é {imc:.1f}')
 if imc < 18.5:
     print('Você está abaixo do peso. Seu IMC deve ser maior que 18.5')
 elif imc > 18.5 and imc < 26:
@@ -32,3 +32,5 @@ elif imc > 31 and imc < 41:
     print('Você Já é OBESO!!! Procure se tratar')
 elif imc > 41:
     print('Obesidade Mórbida! PROCURE UM MÉDICO E.... NÃO COME MAIS PORRAAA')
+
+#Corrigido

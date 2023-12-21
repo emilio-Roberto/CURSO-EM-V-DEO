@@ -29,4 +29,34 @@ elif fpa == 4:
     print(f'Valor do produto: R${p:.2f}.\nTotal a pagar: R${nf:.2f}.\nJuros de 20%.')
 else:
     print('Opção incorreta.')
+
+#Apresentando resultado diferente do descrito nos testes.
     
+#Resolução:
+
+'''
+print('{!=^40}'.format('LOJAS BERTO'))
+p = float(input('Preço das compras R$'))
+print('''FORMAS DE PAGAMENTO
+[ 1 ] À Vista dinheiro/PIX
+[ 2 ] À Vista Cartão
+[ 3 ] 2x no Cartão
+[ 4 ] 3x ou Mais no Cartão''')
+op = int(input('Qual é a opção ? '))
+if op == 1:
+    total = p - (p * 10 / 100)
+elif op == 2:
+    total = p - (p * 5 / 100)
+elif op == 3:
+     total = p
+     par = total / 2
+     print('Sua compra será parcelada em 2x de R${:.2f}.'.format(par))
+elif op == 4:
+    total = p + (p * 20 / 100)
+    topar = int(input('Quantas parcelas ? '))
+    parcela = total / topar
+    print('Sua compra será parcelada em {}x de R${:.2f} COM JUROS'.format(topar, parcela))
+print('Sua compra de R${:.2f} vai custar R${:.2f} no final.'.format(p, total))
+'''
+
+#Finalizado
