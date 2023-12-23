@@ -21,7 +21,7 @@ if p1 == 'PAPEL' and pc == 'PAPEL':
 elif p1 == 'PAPEL' and pc == 'PEDRA':
     print(f'PLAYER> {p1}\nPC> {pc}')
     sleep(1)
-    print('Pedra vence papel!')
+    print('Papel cobre Pedra!')
     sleep(1)
     print('Você perdeu')
 
@@ -35,9 +35,9 @@ elif p1 == 'PAPEL' and pc == 'TESOURA':
 elif p1 == 'PEDRA' and pc == 'PAPEL':
     print(f'PLAYER> {p1}\nPC> {pc}')
     sleep(1)
-    print('Pedra rasga Papel!')
+    print('Papel cobre Pedra!')
     sleep(1)
-    print('Você ganhou!')
+    print('Você Perdeu!')
 
 elif p1 == 'PEDRA' and pc == 'PEDRA':
     print(f'PLAYER> {p1}\nPC> {pc}')
@@ -74,3 +74,58 @@ elif p1 == 'TESOURA' and pc == 'TESOURA':
     sleep(1)
     print('EMPATE!!')
 #FIM :)
+
+#CORRIGIDO
+
+#Resolução
+    
+'''
+from random import randint
+from time import sleep
+itens = ('Pedra', 'Papel', 'Tesoura')
+computador = randint(0, 2)
+print('''Suas opções:
+[ 1 ] Pedra
+[ 2 ] Papel
+[ 3 ] Tesoura''')
+jogador = int(input('Qual é a sua jogada ? '))
+print('JO')
+sleep(1)
+print('KEN')
+sleep(1)
+print('PO!!')
+sleep(1)
+print('-' * 11)
+print('Computador jogou {}'.format(itens[computador]))
+print('Jogador jogou {}'.format(itens[jogador]))
+print('-' * 11)
+if computador == 0: #Computador jogou Pedra
+    if jogador == 0:
+        print('EMPATE')
+    elif jogador == 1:
+        print('Jogador Vence!')
+    elif jogador == 2:
+        print('Computador Vence!')
+    else:
+    print('Jogada Inválida!')
+    
+elif computador == 1: #Computador jogou Papel
+    if jogador == 0:
+        print('Computador Vence')
+    elif jogador == 1:
+        print('EMPATE')
+    elif jogador == 2:
+        print('Jogador Vence')
+    else:
+    print('Jogada Inválida!')
+
+elif computador == 2: #Computador jogou Tesoura
+    if jogador == 0:
+        print('Jogador Vence')
+    elif jogador == 1:
+        print('Computador Vence')
+    elif jogador == 2:
+        print('EMPATE')
+    else:
+    print('Jogada Inválida!')
+'''
